@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+/* text color */
+.text-primary{
+    color: var(--pink)!important;
+}
+
+/* header */
+#header{
+    background: url(../image/carousel1.jpg) top/cover no-repeat;
+    height: 75vh;
+}

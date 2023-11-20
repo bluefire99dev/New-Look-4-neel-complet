@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/css/address.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <title>address</title>
+    <style>
+        .gradient-custom-2 {
+            /* fallback for old browsers */
+            background: #fccb90;
+
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+        }
+
+        @media (min-width: 768px) {
+            .gradient-form {
+                height: 100vh !important;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .gradient-custom-2 {
+                border-top-right-radius: .3rem;
+                border-bottom-right-radius: .3rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+ <!-- navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+    <div class="container p-0 m-1">
+        <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+            <!-- <span class="text-uppercase fw-lighter ms-2">New Look</span> -->
+        </a>
+        <div class="logo">
+            <img src="image/New Look.png" alt="site icon" class="img-thumbnail">
+
+        </div>
+
+
+        <div class="order-lg-2 nav-btns">
+
+            <input type="text" class="searchtext" placeholder="Search ">
+            <button type="button" class="btn position-relative">
+                <i class="fa fa-search"></i>
+            </button>
+            <a href="/WhishlistPage.html"><button type="button" class="btn position-relative">
+                <i class="fa fa-heart"></i>
+            </button></a>
+            <a href="/BagPage.html"><button type="button" class="btn position-relative">
+                <i class="fa fa-shopping-cart"></i>
+            </button></a>
+               
+           
+            <!--user icon -->
+            <!-- <button type="button" class="btn position-relative">
+                <i class="fa fa-user dropdown-toggle " data-bs-toggle="dropdown"
+                aria-expanded="false"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            -->
+
+            <div class="btn-group">
+                <button type="button" class="btn position-relative dropdown-toggle p-2" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <i class="fa fa-user"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">LOG-IN</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- togal -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav mx-auto text-center">
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="/index.html">home</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#collection">collection</a>
+                </li>
+                <!-- <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="#special">specials</a>
+                </li> -->
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="/CatagoryPage.html">Categories</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="/aboutPage.html">about us</a>
+                </li>
+                <!-- <li class="nav-item px-2 py-2 border-0">
+                    <a class="nav-link text-uppercase text-dark" href="#popular">popular</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end of navbar -->
+
+
+
+
+
+
+
+
+    <h1>address cart page</h1>
+    <!-- regostration  -->
+    <section class="h-100 mt-5 p-md-5" style="background-color:  whitesmoke;">
+        <div class="container py-4 h-100  mt-5   p-md-4">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black ">
+                        <div class="row g-0 ">
+                            <!-- 1 form-->
+                            <div class="col-lg-6 border border-success">
+                                <div class="card-body p-md-5 mx-md-4">
+                                    <form>
+                                        <!-- name -->
+                                        <div class="form-outline mb-4 ">
+                                            <h6>CONTACT DETAILS FOR ADDRESS</h6>
+                                            <label class="form-label" for="form2Example11">Name</label>
+                                            <input type="text" id="form2Example11" class="form-control"
+                                                placeholder="Enter Name" />
+                                        </div>
+
+                                        <!-- phone -->
+                                        <div class="form-outline mb-4 ">
+                                            <label class="form-label" for="form2Example11">Phone No
+
+                                            </label>
+                                            <input type="tel" id="form2Example11" class="form-control"
+                                                placeholder="Phone No" />
+                                        </div>
+                                        <!-- ADDRESS -->
+                                        <div class="form-outline mb-4 ">
+                                            <h6>ADDRESS</h6>
+                                            <label class="form-label" for="form2Example11">Pin Code</label>
+
+                                            <input type="tel" id="form2Example11" class="form-control"
+                                                placeholder="Pin Code" />
+
+                                        </div>
+
+                                        <div class="form-outline mb-4">
+                                            <input type="text" id="form2Example11" class="form-control"
+                                                placeholder="address(House no,Building,Street,Area)" />
+                                        </div>
+                                        <div class="form-outline mb-4">
+                                            <!-- <label class="form-label" for="form2Example11">locality/town</label> -->
+                                            <input type="text" id="form2Example11" class="form-control"
+                                                placeholder="locality/town" />
+                                        </div>
+                                        <div class="row g-2">
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingInputGrid"
+                                                        placeholder="city/distric*" value="m">
+                                                    <label for="floatingInputGrid">city/distric</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control" id="floatingInputGrid"
+                                                        placeholder="State*" value="m">
+                                                    <label for="floatingInputGrid">State</label>
+                                                </div>
+                                            </div>
+                                            <!-- save addres as -->
+                                            <div class="row g-2">
+                                                <label class="form-label" for="form2Example11">Save s Address</label>
+                                                <div class="col-md">
+                                                    <div class="form-floating">
+                                                        <button type="button"
+                                                            class="btn btn-outline-primary rounded-pill">Home</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md dropdown">
+                                                    <div class="form-floating">
+                                                        <!-- <button type="button" class="btn btn-outline-primary rounded-pill">Work-1</button> -->
+                                                        <button
+                                                            class="btn dropdown-toggle btn-outline-primary rounded-pill"
+                                                            type="button" id="dropdownMenuButton1"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Work
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><a class="dropdown-item" href="#">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="Checkme4" checked />open on monday
+                                                                </a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="Checkme4" checked />open on
+                                                                    tuesday</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item" href="#">
+                                                                    <input class="form-check-input" type="checkbox"
+                                                                        value="" id="Checkme4" checked />open on
+                                                                    wendesday </a>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!--  -->
+
+                                                <!--work drop down check box  -->
+                                                <div class="dropdown">
+
+                                                </div>
+                                                <!--  -->
+                                                <div class="form-outline mb-4 ">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Make this my defualt address
+                                                    </label>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <!-- <button class="btn btn-primary" type="button">Add address</button> -->
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger rounded-pill">Make
+                                                        Add address</button>
+                                                </div>
+                                            </div>
+                                            <!--  -->
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                            <!-- 2 detail of product-->
+                            <div class="col ">
+                                <div class="card mb-4">
+                                    <div class="card-body">
+                                        <p><strong>Expected shipping delivery</strong></p>
+                                        <p class="mb-0">12.10.2020 - 14.10.2020</p>
+                                    </div>
+                                </div>
+                                <div class="card-body p-md-5 mx-md-4 ">
+                                    <div class="col-md-0 mb-0 border border-success">
+                                        <div class="card mb-4">
+                                            <div class="card-header py-3">
+                                                <h5 class="mb-0">Price Detail</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <ul class="list-group list-group-flush">
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                                        total MRP
+                                                        <span>$53.98</span>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                                        Discount On MRP
+                                                        <span>-100</span>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                                        Convenience Fee
+                                                        <span>Free</span>
+                                                    </li>
+                                                    <li
+                                                        class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                                        <div>
+                                                            <strong>Total amount</strong>
+                                                            <strong>
+                                                                <p class="mb-0">(including VAT)</p>
+                                                            </strong>
+                                                        </div>
+                                                        <span><strong>$53.98</strong></span>
+                                                    </li>
+                                                </ul>
+                                                <!-- 
+                                                <div class="text-center">
+
+                                                    <button type="button"
+                                                        class="btn btn-outline-danger rounded-pill">Make
+                                                        purchase</button>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <section>
+          <!-- footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a class="text-uppercase text-decoration-none brand text-white" href="index.html">New Look
+                        Boutique</a>
+                    <p class="text-white text-muted mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nostrum mollitia quisquam veniam odit cupiditate, ullam aut voluptas velit dolor ipsam?</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none text-muted">
+                                <i class="fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            India
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span class="fw-light">
+                            newlook@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +91 98374 92738
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
